@@ -76,14 +76,14 @@ elseif (_aurora_sdl3_provider STREQUAL "package")
       endif ()
       if (_sdl3_arch)
         set(AURORA_SDL3_PACKAGE_URL
-          "https://github.com/encounter/sdl3-build/releases/download/v${AURORA_SDL3_VERSION}/SDL3-windows-${_sdl3_arch}.tar.gz")
+          "https://github.com/Taylor8484/chancetime-dependencies/releases/download/sdl3-build-v${AURORA_SDL3_VERSION}/SDL3-windows-${_sdl3_arch}.tar.gz")
       else ()
         set(AURORA_SDL3_PACKAGE_URL
-          "https://github.com/libsdl-org/SDL/releases/download/release-${AURORA_SDL3_VERSION}/SDL3-devel-${AURORA_SDL3_VERSION}-VC.zip")
+          "https://github.com/Taylor8484/chancetime-dependencies/releases/download/sdl-release-${AURORA_SDL3_VERSION}/SDL3-devel-${AURORA_SDL3_VERSION}-VC.zip")
       endif ()
     elseif (MINGW)
       set(AURORA_SDL3_PACKAGE_URL
-        "https://github.com/libsdl-org/SDL/releases/download/release-${AURORA_SDL3_VERSION}/SDL3-devel-${AURORA_SDL3_VERSION}-mingw.tar.gz")
+        "https://github.com/Taylor8484/chancetime-dependencies/releases/download/sdl-release-${AURORA_SDL3_VERSION}/SDL3-devel-${AURORA_SDL3_VERSION}-mingw.tar.gz")
     else ()
       message(FATAL_ERROR
         "AURORA_SDL3_PROVIDER=package requires AURORA_SDL3_PACKAGE_URL on non-Windows platforms.\n"
@@ -140,7 +140,7 @@ elseif (_aurora_sdl3_provider STREQUAL "vendor")
 
     include(FetchContent)
     FetchContent_Declare(SDL
-      URL "https://github.com/libsdl-org/SDL/archive/${AURORA_SDL3_REF}.tar.gz"
+      URL "https://github.com/Taylor8484/chancetime-dependencies/releases/download/sdl-release-${AURORA_SDL3_VERSION}/SDL-release-${AURORA_SDL3_VERSION}.tar.gz"
       DOWNLOAD_EXTRACT_TIMESTAMP FALSE
       PATCH_COMMAND ${CMAKE_COMMAND}
         -DSDL_SOURCE_DIR=<SOURCE_DIR>
