@@ -63,7 +63,7 @@ if (_aurora_nod_provider STREQUAL "vendor")
 
     include(FetchContent)
     FetchContent_Declare(aurora_nod
-      GIT_REPOSITORY "https://github.com/encounter/nod.git"
+      GIT_REPOSITORY "https://github.com/Taylor8484/nod.git"
       GIT_TAG "${AURORA_NOD_VERSION}"
       GIT_SHALLOW TRUE
       EXCLUDE_FROM_ALL
@@ -128,7 +128,7 @@ elseif (_aurora_nod_provider STREQUAL "package")
         "Prebuilt packages: https://github.com/encounter/nod/releases")
     endif ()
     set(AURORA_NOD_PACKAGE_URL
-      "https://github.com/encounter/nod/releases/download/${AURORA_NOD_VERSION}/libnod-${_nod_platform}.tar.gz")
+      "https://github.com/Taylor8484/chancetime-dependencies/releases/download/nod-${AURORA_NOD_VERSION}/libnod-${_nod_platform}.tar.gz")
   endif ()
   message(STATUS "aurora: Fetching prebuilt nod package (provider=package, linkage=${AURORA_NOD_LINKAGE})")
 
