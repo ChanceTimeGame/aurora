@@ -35,7 +35,7 @@ else ()
   endif()
   set(ABSL_PROPAGATE_CXX_STD ON)
   FetchContent_Declare(abseil-cpp
-    URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/abseil-20240722.0/abseil-cpp-20240722.0.tar.gz
+    URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/abseil-20240722.0/abseil-cpp-20240722.0.tar.gz
     URL_HASH SHA256=f50e5ac311a81382da7fa75b97310e4b9006474f9560ac46f54a9967f07d4ae3
     DOWNLOAD_EXTRACT_TIMESTAMP FALSE
     EXCLUDE_FROM_ALL
@@ -54,7 +54,7 @@ endif ()
 if (NOT TARGET xxHash::xxhash)
   message(STATUS "aurora: Fetching xxhash")
   FetchContent_Declare(xxhash
-    URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/xxhash-v0.8.3/xxHash-0.8.3.tar.gz
+    URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/xxhash-v0.8.3/xxHash-0.8.3.tar.gz
     URL_HASH SHA256=aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80
     SOURCE_SUBDIR cmake_unofficial
     DOWNLOAD_EXTRACT_TIMESTAMP FALSE
@@ -97,7 +97,7 @@ if (NOT TARGET fmt::fmt)
   if (NOT TARGET fmt::fmt)
     message(STATUS "aurora: Fetching fmt")
     FetchContent_Declare(fmt
-      URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/fmt-12.1.0/fmt-12.1.0.tar.gz
+      URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/fmt-12.1.0/fmt-12.1.0.tar.gz
       URL_HASH SHA256=ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea
       DOWNLOAD_EXTRACT_TIMESTAMP FALSE
       EXCLUDE_FROM_ALL
@@ -136,7 +136,7 @@ if (AURORA_ENABLE_GX)
     endif ()
     FetchContent_Declare(
       ZLIB
-      URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/zlib-ng-2.3.3/zlib-ng-2.3.3.tar.gz
+      URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/zlib-ng-2.3.3/zlib-ng-2.3.3.tar.gz
       URL_HASH SHA256=f9c65aa9c852eb8255b636fd9f07ce1c406f061ec19a2e7d508b318ca0c907d1
       PATCH_COMMAND ${CMAKE_COMMAND} -P "${CMAKE_CURRENT_SOURCE_DIR}/../cmake/PatchZlib.cmake"
       DOWNLOAD_EXTRACT_TIMESTAMP FALSE
@@ -178,7 +178,7 @@ if (AURORA_ENABLE_GX)
     set(PNG_TOOLS OFF CACHE BOOL "Build the libpng tools" FORCE)
     FetchContent_Declare(
       PNG
-      URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/libpng-v1.6.58/libpng-1.6.58.tar.gz
+      URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/libpng-v1.6.58/libpng-1.6.58.tar.gz
       URL_HASH SHA256=A9D4DF463D36A6E5F9C29BD6F4967312D17E996C1854F3511F833924EB1993CF
       DOWNLOAD_EXTRACT_TIMESTAMP FALSE
       EXCLUDE_FROM_ALL
@@ -211,7 +211,7 @@ if (AURORA_ENABLE_GX)
     set(FT_DISABLE_HARFBUZZ ON CACHE BOOL "" FORCE)
     set(FT_DISABLE_PNG ON CACHE BOOL "" FORCE)
     FetchContent_Declare(Freetype
-      URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/freetype-2.14.3/freetype-2.14.3.tar.gz
+      URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/freetype-2.14.3/freetype-2.14.3.tar.gz
       URL_HASH SHA256=e61b31ab26358b946e767ed7eb7f4bb2e507da1cfefeb7a8861ace7fd5c899a1
       DOWNLOAD_EXTRACT_TIMESTAMP FALSE
       EXCLUDE_FROM_ALL
@@ -245,7 +245,7 @@ if (AURORA_ENABLE_GX)
   if (NOT TARGET sqlite3)
     message(STATUS "aurora: Fetching sqlite3")
     FetchContent_Declare(sqlite3
-      URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/sqlite-3510300/sqlite-amalgamation-3510300.zip
+      URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/sqlite-3510300/sqlite-amalgamation-3510300.zip
       URL_HASH SHA256=acb1e6f5d832484bf6d32b681e858c38add8b2acdfd42ac5df24b8afb46552b4
       DOWNLOAD_EXTRACT_TIMESTAMP FALSE
       EXCLUDE_FROM_ALL
@@ -273,7 +273,7 @@ if (AURORA_ENABLE_GX)
       set(ZSTD_BUILD_SHARED OFF)
 
       FetchContent_Declare(zstd
-        URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/zstd-v1.5.7/zstd-1.5.7.tar.gz
+        URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/zstd-v1.5.7/zstd-1.5.7.tar.gz
         URL_HASH SHA256=eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3
         DOWNLOAD_EXTRACT_TIMESTAMP FALSE
         SOURCE_SUBDIR build/cmake
@@ -289,7 +289,7 @@ if (AURORA_ENABLE_GX)
   if (AURORA_ENABLE_RMLUI AND NOT TARGET RmlUi)
     message(STATUS "aurora: Fetching RmlUi")
     FetchContent_Declare(rmlui
-      URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/rmlui-f00a0fee/RmlUi-f00a0fee38391b2f927114e11bea18dc0a7dba1e.tar.gz
+      URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/rmlui-f00a0fee/RmlUi-f00a0fee38391b2f927114e11bea18dc0a7dba1e.tar.gz
       URL_HASH SHA256=6d9fd1164b7873c9dfba72d724753bda9e3db8280c9af802eed8e2a12035f152
       DOWNLOAD_EXTRACT_TIMESTAMP FALSE
       EXCLUDE_FROM_ALL
@@ -319,7 +319,7 @@ if (NOT TARGET Tracy::TracyClient)
 
   FetchContent_Declare(
           tracy
-          URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/tracy-v0.14.1/tracy-0.14.1.zip
+          URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/tracy-v0.14.1/tracy-0.14.1.zip
           URL_HASH SHA256=908f3a2917fa86a247abfcf85dcf04bad1db6986a4d40f94b70512f3e9e98d5b
           DOWNLOAD_EXTRACT_TIMESTAMP FALSE
           EXCLUDE_FROM_ALL

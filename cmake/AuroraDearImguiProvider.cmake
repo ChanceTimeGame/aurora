@@ -1,7 +1,7 @@
 if (NOT TARGET imgui)
     message(STATUS "aurora: Fetching imgui")
     FetchContent_Declare(imgui
-            URL https://github.com/Taylor8484/chancetime-dependencies/releases/download/imgui-v1.91.9b-docking/imgui-1.91.9b-docking.tar.gz
+            URL https://github.com/ChanceTimeGame/chancetime-dependencies/releases/download/imgui-v1.91.9b-docking/imgui-1.91.9b-docking.tar.gz
             URL_HASH SHA256=466fdef9b18de15f0bb6e288e3d00ffa3d82200ec458ce5e4f724a161d9528a5
             DOWNLOAD_EXTRACT_TIMESTAMP FALSE
             EXCLUDE_FROM_ALL
